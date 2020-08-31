@@ -1,0 +1,43 @@
+* {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: blueviolet;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+}
+
+.shadow__a {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3);
+  margin: 10px;
+}
+
+.shadow__b {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+    5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.shadow__c {
+  /* color: #6e18f3; */
+  color: blueviolet;
+  padding: 40px;
+  filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+    drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
+    drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+  margin: 10px;
+}
